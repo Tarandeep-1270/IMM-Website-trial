@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMM Homepage</title>
+    <!--		Viewport tag-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--		normailize.css-->
+		<link rel="stylesheet" href="./css/normalize.css">
+<!--       Reset.css-->
+<!--        <link rel="stylesheet" href="./css/reset.css">-->
+<!--		google fonts-->
+        <link rel="stylesheet" href="font/font-stylesheet.css">
+<!--		personal stylesheet-->
+        <link rel="stylesheet" type="text/css" href="./css/style1.css">
+</head>
+<body>
+    <header>
+      <a href="index.html" class="mainLogo"><img src="images/ac-logo/Asset%201@3x.png" alt="Algonquin Logo" class="ac-logo"></a>
+       <div class="sideLogo">
+           <h1>Interactive Media Management</h1>
+       </div>
+   </header>
+    <nav class='navigation'>
+      <div class="container" onclick="myFunction(this)" id="menuToggle">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+       </div>
+        <div id="menu" class="dropdown">
+              <a href="index.html">HOME</a>
+              <a href="about.html">ABOUT</a>
+              <a href="portfolio.html">PORTFOLIO</a>
+              <a href="staff.html">STAFF</a>
+        </div>
+        <div id="dk-menu" class="dk-menu">
+              <a href="index.html">HOME</a>
+              <a href="about.html">ABOUT |</a>
+              <a href="portfolio.html">PORTFOLIO |</a>
+              <a href="staff.html">STAFF | </a>
+        </div>
+   </nav>
+   <main>
+    <div class="cntcUs">
+          <h2>Contact us</h2>
+      </div>
+        <form method="get" autocomplete="on">
+                
+                <div class="cntcForm">
+                    <div class="fname">
+                        <div class="labl">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <br>
+                        <div class="iput">
+                            <input type="text" id="fname" name="fname" value="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="lname">
+                        <div class="labl">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <br>
+                        <div class="iput">
+                            <input type="text" id="lname" name="lname" value="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="email">
+                       <div class="labl">
+                           <label for="email">Email</label>
+                       </div>
+                        <br>
+                        <div class="iput">
+                            <input type="text" id="email" name="email" value="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="message">
+                       <div class="labl">
+                        <label for="message">Message</label>
+                       </div>
+                        <br>
+                        <div class="iput">
+                            <textarea id="message" name="message" rows="8"></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" name="submit-button" id="submit" value="SEND" class="submit">
+                    </div>
+                </div>
+            </form>
+            
+<?php
+   // If error-message exists, print it here
+    if (isset($err)) {
+        echo $err;
+    }
+    // If feedback exists, print it here
+    if (isset($feedback)) {
+        echo $feedback;
+}
+?>
+              <hr>
+              <article class="genEnq">
+                  <h3>For General Enqiries</h3>
+                  <p>1385 Woodroffe Avenue,<br>Ottawa, Ontario, K2G1V8,<br>613-727-4723.</p>
+              </article>
+   </main>
+   
+    
+        
+       <script src="js/main.js"></script>
+	</body>
+	<footer>
+      <div class="logo-white">
+          <a href="index.html"> <img src="./images/logo-white.png"></a>
+        </div>
+        <div class="info">
+				<div class="section1">
+					<p>Quick Look<br>About<br>Admission<br>Programs/Courses</p>
+				</div>
+				<div class="section2">
+					<p>Contact Us<br>1385 Woodroffe Avenue<br>Ottawa,Ontario K2G1V8<br>613-727-4723</p>
+				</div>
+				<div class="section3">
+                  <p>Connect with us:</p>
+                    <div class="socials1"><a href="https://www.instagram.com/"><img src="./images/insta.png"  width="30px"></a></div>
+                    <div class="socials2"><a href="https://www.facebook.com/"><img src="./images/facebook.png"  width="30px"></a></div>
+                    <div class="socials3"><a href="https://www.linkedin.com/"><img src="./images/linkedin.png" width="30px"></a></div>
+                    <div class="socials4"><a href="https://www.twitter.com/"><img src="./images/twitter.png" width="30px"></a></div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>©Atom Co. 2021.</p>
+			</div>
+   </footer> 
+</html>

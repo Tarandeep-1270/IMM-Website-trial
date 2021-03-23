@@ -1,0 +1,906 @@
+{box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+		
+	display: grid;	
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+    "logo logo title title"
+    "nav nav nav nav"
+    "img img img img";
+}
+
+.options{
+		
+	display: grid;	
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+    "overview courses"
+    "faculty faq";
+     
+}
+
+.content{
+		
+	display: grid;	
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+    "content1 content1text content2text content2"
+    "content3 content3text content4text content4";
+    margin-top: 1em;
+}
+.content1text{
+	grid-area: content1text;
+	margin-top:1.3em;
+	margin-right:10%;
+}
+
+.content2text{
+	grid-area: content2text;
+	margin-top:1.3em;
+	margin-left:10%;
+}
+.content3text{
+	grid-area: content3text;
+	margin-top:1.3em;
+	margin-right:10%;
+}
+
+.content4text{
+	grid-area: content4text;
+	margin-top:1.3em;
+	margin-left:10%;
+}
+
+.content1{
+	grid-area: content1;
+	margin-top:5%;
+	margin-left: 20%;
+	b
+}
+.content2{
+	grid-area: content2;
+	margin-top:5%;
+	margin-left: 20%;
+}
+.content3{
+	grid-area: content3;
+	margin-top:5%;
+	margin-left: 20%;
+}
+
+.content4{
+	grid-area: content4;
+	margin-top:5%;
+	margin-left:20%;
+}
+
+blockquote {
+display: inline-block;
+font-size: 1.2em;
+font-style: italic;
+/*width: 80%;*/
+margin: 0.25em 0 2em 2em;
+padding: 0.35em 40px;
+line-height: 1.45;
+position: relative;
+color: #383838;
+}
+
+blockquote:before {
+padding-left: 10px;
+content: "\201C";
+font-size: 80px;
+position: absolute;
+left: -20px;
+top: -20px;
+color: #000000;
+}
+
+.info{
+		
+	display: grid;	
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+    "section1 section2 section3";
+     margin-top: 10px;
+}
+
+.section1{
+	grid-area: section1;
+	margin-left: 100px;
+	color:#ffffff;
+	font-size: 16px;
+}
+
+.section2{
+	grid-area: section2;
+	color:#ffffff;
+	font-size: 16px;
+}
+
+.section3{
+	grid-area: section3;
+	margin-left: 100px;
+	color:#ffffff;
+	font-size: 16px;
+}
+
+.section3 p  {
+	margin-left: 80px;
+	
+}
+
+.section3 ul li {
+	display: inline;
+	text-decoration: none;
+	margin-left: 5px;
+}
+
+.section3 ul li img{
+	width:40px;
+	height: 40px;	
+}
+
+.overview{
+	grid-area: overview;
+	margin-top: 50px;
+	color:#ffffff;
+	font-size: 45px;
+	position: relative;
+}
+
+.overview img{
+	height: 170px;
+	width: 92%;
+	border-top-right-radius:35px;
+	border-bottom-right-radius:35px;
+}
+
+.overview-text{
+	position: absolute;
+	bottom: 15%;
+	left: 30%;
+}
+
+.courses{
+	grid-area: courses;
+	text-align: right;
+	margin-top: 50px;
+	color:#ffffff;
+	font-size: 45px;
+	position: relative;
+}
+
+.courses img{
+	height: 170px;
+	width: 92%;
+	border-top-left-radius:35px;
+	border-bottom-left-radius:35px;
+}
+
+.courses-text{
+	position: absolute;
+	bottom: 15%;
+	right: 30%;
+}
+
+.faculty{
+	grid-area: faculty;
+	margin-top: 50px;
+	color:#ffffff;
+	font-size: 45px;
+	position: relative;
+}
+
+.faculty img{
+	height: 170px;
+	width: 92%;
+	border-top-right-radius:35px;
+	border-bottom-right-radius:35px;
+}
+
+.faculty-text{
+	position: absolute;
+	bottom: 15%;
+	left: 33%;
+}
+
+.faq{
+	grid-area: faq;
+	text-align: right;
+	margin-top: 50px;
+	color:#ffffff;
+	font-size: 45px;
+	position: relative;
+}
+
+.faq img{
+	height: 170px;
+	width: 92%;
+	border-top-left-radius:35px;
+	border-bottom-left-radius:35px;
+}
+
+.faq-text{
+	position: absolute;
+	bottom: 15%;
+	right: 30%;
+}
+
+.header{
+	grid-area: logo;
+	margin-left: 20%;
+  	margin-top:1.8em;
+  	margin-bottom:1em;
+}
+
+.header-right{
+	grid-area: title;
+	color:#006341;
+	margin-top:1em;
+	margin-left: 20%;
+	font-size:75%;
+}
+
+.logo-mobile{
+	display:none;
+}
+
+.testimonials{
+	color:#ffffff;
+	overflow: hidden;
+  	background-color: #006341;
+  	padding:2px;
+  	margin-top: 40px;
+  	text-align: center;
+}
+
+footer{
+	background-color: #006341;
+	overflow: hidden;
+	padding:10px;
+}
+
+.logo-white img{
+	margin-top: 10px;
+	margin-left: 100px;
+	width:300px;
+
+}
+
+.copyright{
+	margin-top: 10px;
+	margin-left: 100px;
+	width:600px;
+	font-size: 22px;
+	color:#ffffff;
+}
+
+.topnav {
+	grid-area: nav;
+	overflow: hidden;
+  	background-color: #006341;
+  	text-align: center; 
+}
+
+.inner{
+	margin-left: 38%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color:#006341;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.try {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.try img{
+	width:100%;
+	height: 500px;
+}
+
+.center-left {
+	position: absolute;
+	bottom: 20%;
+	left: 5%;
+}
+
+.center-left h2{
+	font-size: 230%;
+	text-align: left;
+}
+
+.center-left h1{
+	font-size: 280%;
+	font-family: sans-serif;
+}
+
+.center-right {
+	position: absolute;
+	bottom: 20%;
+	right: 10%;
+	background-color:#faffed;
+	border-radius: 12px;
+	padding:20px;
+	width:32%;
+	color:#006341;
+	text-align: left;
+}
+
+.center-right h2{
+	font-size: 120%;
+}
+
+.center-right .apply{
+	font-size: 1.8em;
+	border-radius: 12px;
+	width: 50%;
+	padding:0.4em;
+	margin-left:25%;
+	margin-right:20%;
+	background-color: #006341;
+	color:#ffffff;
+}
+
+@media screen and (max-width: 1400px) {
+
+	.content1{
+		margin-top:20%;
+	}
+	.content2{
+		margin-top:20%;
+	}
+	.content3{
+		margin-top:20%;
+	}
+
+	.content4{
+		margin-top:20%;
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+
+	.center-right {
+		bottom: 90px;
+		right: 60px;
+		width:450px;
+	}
+
+	.center-left h2{
+		font-size: 20px;
+	}
+
+	.center-left h1{
+		font-size: 30px;
+	}
+
+	.center-left {
+		left: 5%;
+		bottom: 160px;
+	}
+	.content1{
+		margin-top:25%;
+	}
+	.content2{
+		margin-top:25%;
+	}
+	.content3{
+		margin-top:25%;
+	}
+
+	.content4{
+		margin-top:25%;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	.info {
+	    grid-template-columns: 1fr 1fr; 
+	    grid-template-rows: auto; 
+	    grid-template-areas: 
+	        "section1 section2"
+	        "section3 section3"; 
+	}
+	.content1{
+		margin-top:35%;
+	}
+	.content2{
+		margin-top:35%;
+	}
+	.content3{
+		margin-top:35%;
+	}
+
+	.content4{
+		margin-top:35%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	.content {
+	    grid-template-columns: 1fr; 
+	    grid-template-rows: auto; 
+	    grid-template-areas: 
+	        "content1"
+	        "content1text"
+	        "content2"
+	        "content2text"
+	        "content3"
+	        "content3text"
+	        "content4"
+	        "content4text"; 
+
+	}
+
+	.content1text{
+		margin-top:1.3em;
+		text-align: center;
+		margin-right:0px;
+		margin-left: 0px; 
+	}
+
+	.content2text{
+		margin-top:1.3em;
+		text-align: center;
+		margin-right:0px;
+		margin-left: 0px; 
+	}
+	.content3text{
+		margin-top:1.3em;
+		text-align: center;
+		margin-right:0px;
+		margin-left: 0px; 
+	}
+
+	.content4text{
+		margin-top:1.3em;
+		text-align: center;
+		margin-right:0px;
+		margin-left: 0px; 
+	}
+
+	.content1{
+		margin-top:5%;
+		text-align: center;
+		margin-right:0px;
+		margin-left: 0px; 
+	}
+	.content2{
+		margin-top:5%;
+		text-align: center;
+		margin-right:0px;
+		margin-left: 0px; 
+	}
+	.content3{
+		margin-top:5%;
+		text-align: center;
+		margin-right:0px;
+		margin-left: 0px; 
+	}
+
+	.content4{
+		margin-top:5%;
+		text-align: center;
+		margin-right:0px;
+		margin-left: 0px; 
+	}
+	blockquote {
+		font-size: 100%;
+		font-style: italic;
+		width: 50%;
+	}
+
+	.try img{
+		height: 400px;
+	}
+
+	.center-left {
+		left: 5%;
+		bottom: 32%;
+	}
+
+	.center-left h2{
+		font-size: 1.2em;
+	}
+
+	.center-left h1{
+		font-size: 1.8em;
+	}
+
+	.center-right {
+		right: 5%;
+		width:40%;
+		bottom: 20%;
+	}
+
+	.center-right h2{
+		font-size: 90%;
+	}
+
+	.center-right .apply{
+		margin-left:25%;
+		font-size: 1.4em;
+		width: 50%;
+		padding:0.5em;
+
+	}
+
+
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+
+	.topnav.responsive {position: relative;}
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	
+	.section1{
+		margin-left: 20px;
+		color:#ffffff;
+		font-size: 16px;
+	}
+
+	.section3{
+		margin-left: 20px;
+		color:#ffffff;
+	}
+
+	.section3 p  {
+		margin-left: 80px;
+		
+	}
+	.logo-white img{
+		margin-top: 5px;
+		margin-left: 20px;
+		width:300px;
+	}
+	.copyright{
+		margin-left:20px;
+	}
+	.inner{
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.options {
+	    grid-template-columns: 1fr; 
+	    grid-template-rows: auto; 
+	    grid-template-areas: 
+	        "overview"
+	        "courses"
+	        "faculty"
+	        "faq"; 
+	}
+
+	.overview{
+		margin-top: 3em;
+		font-size: 2em;
+		position: relative;
+	}
+
+	.overview img{
+		width: 86%;
+	}
+
+	.courses{
+		margin-top: 3em;
+		font-size: 2em;
+		position: relative;
+	}
+
+	.courses img{
+		width: 86%;
+	}
+	.faculty{
+		margin-top: 3em;
+		font-size: 2em;
+		position: relative;
+	}
+
+	.faculty img{
+		width: 86%;
+	}
+
+	.faq{
+		margin-top: 3em;
+		font-size: 2em;
+		position: relative;
+	}
+
+	.faq img{
+		width: 86%;
+	}
+
+	.center-left {
+		left: 5%;
+		bottom: 32%;
+	}
+
+	.center-left h2{
+		font-size: 1em;
+	}
+
+	.center-left h1{
+		font-size: 1.4em;
+	}
+
+	.center-right {
+		right: 5%;
+		width:40%;
+		bottom: 20%;
+	}
+
+	.center-right h2{
+		font-size: 80%;
+	}
+
+	.center-right .apply{
+		margin-left:25%;
+		font-size: 1.1em;
+		width: 50%;
+		padding:0.3em;
+
+	}
+}
+
+@media screen and (max-width: 650px) {
+	
+/*	.content {
+	    grid-template-columns: 1fr; 
+	    grid-template-rows: auto; 
+	    grid-template-areas: 
+	        "content1"
+	        "content2"
+	        "content3"
+	        "content4"; 
+	}
+
+	.content1{
+		margin-top:10px;
+		margin-left:10px;
+	}
+
+	.content2{
+		margin-top:10px;
+		margin-left:10px;
+	}
+
+	.content3{
+		margin-top:10px;
+		margin-left:10px;
+	}
+
+	.content4{
+		margin-top:10px;
+		margin-left:10px;
+	}*/
+	
+
+	.logo-white img{
+		margin-top: 5px;
+		margin-left: 10px;
+		width:300px;
+	}
+
+	.section1{
+		margin-left:10px;
+	}
+
+	.section3{
+		margin-left:10px;
+	}
+	.section3 p  {
+		margin-left: 0px;	
+	}
+
+	.copyright{
+		margin-left:10px;
+	}
+
+	.inner{
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+	    grid-template-columns: 1fr 1fr 1fr; 
+	    grid-template-rows: auto; 
+	    grid-template-areas: 
+	        "logo title title"
+	        "nav nav nav"
+	        "img img img"; 
+	}
+
+	.logo{
+		display: none;
+	}
+	.logo-mobile{
+		grid-area: logo;
+		display: block;
+		margin-top: 1em;
+
+	}
+
+	.logo-mobile img{
+		height: 50%;
+ 		width: 50%;
+	}
+	.active{
+		grid-area: title;
+		font-size: 2em;
+		margin-top:31px;
+		width: 100%;
+	}
+	.try img{
+		height: 400px;
+	}
+	
+	.center-left h2{
+		font-size: 1em;
+		text-align: center;
+	}
+
+	.center-left h1{
+		font-size: 1.6em;
+	}	
+
+	.center-left {
+		position: absolute;
+		top: 10%;
+		left: 28%;
+	}
+
+	.center-right {
+		bottom: 5%;
+		width: 70%;
+		left: 13%;
+	}
+
+	.center-right h2{
+		font-size: 80%;
+	}
+
+	.center-right .apply{
+		margin-left:25%;
+	}
+	
+/*	.content1{
+		margin: 0px;
+	}
+
+	.content2{
+		margin: 0px;
+	}
+
+	.content3{
+		margin: 0px;
+	}
+
+	.content4{
+		margin: 0px;
+	}
+	.content1 img{
+		width: 100px;
+	}
+
+	.content2 img{
+		width: 100px;
+	}
+
+	.content3 img{
+		width: 100px;
+	}
+
+	.content4 img{
+		width: 100px;
+	}
+
+
+	blockquote {
+		display: inline-block;
+		font-size: 17px;
+		font-style: italic;
+		width: 240px;
+		margin: 4 0 32px 32px;
+		padding: 5.6 40px;
+		line-height: 1.35;
+		position: relative;
+	}*/
+}
+
+@media screen and (max-width: 500px) {
+
+	.logo-mobile img{
+		height: 40%;
+ 		width: 40%;
+	}
+	.active{
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 450px) {
+
+	.center-left h2{
+		font-size: 0.8em;
+		text-align: center;
+	}
+
+	.center-left h1{
+		font-size: 1.2em;
+	}	
+
+	.center-left {
+		position: absolute;
+		top: 10%;
+		left: 25%;
+	}
+
+	.center-right {
+		bottom: 15%;
+		width: 65%;
+		left: 13%;
+	}
+
+	.center-right h2{
+		font-size: 75%;
+	}
+
+	.center-right .apply{
+		margin-left:25%;
+	}
+}
